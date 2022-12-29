@@ -1,0 +1,9 @@
+[Unit]
+Description=Disk Full Alert service.
+
+[Service]
+Type=simple
+ExecStart=/home/user/Tessrac/PythonScripts/diskFullALert/env/bin/python3 /home/user/Tessrac/PythonScripts/diskFullALert/diskFullAlert.py
+
+[Install]
+WantedBy=multi-user.target
